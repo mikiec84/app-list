@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url('../fonts/merriweather-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
+       url('../fonts/merriweather-bold-webfont.woff') format('woff'), 
+       url('../fonts/merriweather-bold-webfont.ttf')  format('truetype'), 
+       url('../fonts/merriweather-bold-webfont.svg#svgFontName') format('svg'); 
+}
+@font-face {
+  font-family: 'SS-Pro';
+  src: url('../fonts/sourcesanspro-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
+       url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'), 
+       url('../fonts/sourcesanspro-regular-webfont.ttf')  format('truetype'), 
+       url('../fonts/sourcesanspro-regular-webfont.svg#svgFontName') format('svg'); 
+}
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url('../fonts/merriweather-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
+       url('../fonts/merriweather-bold-webfont.woff') format('woff'), 
+       url('../fonts/merriweather-bold-webfont.ttf')  format('truetype'), 
+       url('../fonts/merriweather-bold-webfont.svg#svgFontName') format('svg'); 
+}
+body{
+	background-color:#313131;
+}
+.panel-default>.panel-heading {
+    color: #d1d1d1;
+    background-color: #337ab7;
+    border-color: #ddd;
+}
+.letter-active{
+  color:white !important;
+      font-weight: bolder;
+      background:#337ab7 !important;
+}
+ul.filter li:hover {
+    background: #337ab7;
+    color:white;
+        font-weight: bolder;
+}
+ul.filter {
+    list-style: none;
+    /* display: inline; */
+}
+.highcharts-title tspan {
+    font-size: 25px;
+    font-family: Source Sans Pro;
+    font-weight: bolder;
+    /* margin: 5px; */
+}
+ul.filter li:first-child {
+border:1px solid black !important;
+border-radius:3px;
+  }
+ul.filter li:nth-child(2){
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+  }
+  ul.filter li:last-child {
+border-top-left-radius:0px !important;
+border-bottom-left-radius:0px !important;
+border-radius:3px;
+border-right:1px solid black !important;
+  }
+ul.filter li {
+   transition:.2s;
+      background: #f7f7f7;
+    font-family: Open Sans;
+    display: inline;
+    padding: 5px;
+    /* margin: 0 auto; */
+    /* padding: 5px; */
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 7px;
+    padding-right: 10px;
+    border-right: none;
+}
+.panel-title a:visited{
+
+  text-decoration: none;
+}
+.panel-title{
+      font-weight: 100;
+      font-family:Lato;
+}
+.panel-title a{
+  transition:.2s;
+}
+.panel-title a:hover{
+  color:white;
+  text-decoration: none;
+}
+.desc-header{
+  font-family:Source Sans Pro;
+  margin:0px;
+font-weight:bolder;
+  font-size:16px;
+}
+h4{
+  font-family:Source Sans Pro;
+  font-weight:bolder;
+  font-size:22px;
+}
+.header-title{
+      color: #0089ff;
+    text-shadow: 1px 0px 3px #e2e2e2;
+    letter-spacing: -1px;
+        text-transform: uppercase;
+        font-size:25px;
+}
+.lead{
+      color: white;
+    font-family: Source Sans Pro;
+}
+.desc{
+  font-family:Open Sans;
+  font-size:13px;
+}
+.table>tbody>tr>td{
+  padding:2px;
+}
+.all-td{
+  padding:0px !important;
+}
+span.num-app {
+    font-size: 13px;
+    /* font-style: italic; */
+    font-family: Source Sans Pro;
+}
+.list-group{
+      font-family: Lato;
+}
+.list-group-item{
+	border:1px solid black;
+}
+.nav-pills>li+li{
+	margin-left:0px;
+}
+#container{
+  width:100%;
+}
+.thumbnail{
+	border-radius:0px;
+  position:relative;
+  width:100%;
+}
+#nav-categories>li{
+	float:none;
+}
+footer.inner{
+	    text-align: center;
+}
+#footer_wrap {
+	    margin-top: 150px;
+  background: #2355b1;
+    padding:50px 0px 50px 0px;
+}
+#footer_wrap h3{
+    color: white;
+    font-size: 20px;
+    text-shadow: none;
+        letter-spacing: -1px;
+}
+#footer_wrap p{
+  color:white;
+
+    line-height: 18px;
+}
+#footer_wrap #address{
+  color:#d2d2d2;
+  margin-bottom:10px;
+  font-size: 16px;
+}
+#footer_wrap i{
+  margin-right:8px;
+}
+footer{
+	margin:0px;
+}
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg .tg-yw4l {
+    vertical-align: top;
+    width: 100px;
+        transition: .2s;
+}
+td.tg-yw4l:hover {
+    font-size: 20px;
+}
+.red-th {
+    background: red;
+}
+.pull-right{
+      font-size: 12px !important;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 2px !important;
+    border-top-right-radius: 2px !important;
+}
+.list-group-item:last-child {
+    border-top-left-radius: 2px !important;
+    border-top-right-radius: 2px !important;
+}

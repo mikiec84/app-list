@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Template Site #1</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/highcharts.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+    <!-- Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shop-item.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body ng-app="myApp">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">CST App</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#myModal">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Links</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">About</h4>
+            </div>
+            <div class="modal-body">
+                This is a site dedicated to showing information about Application Data.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <p class="lead">Applications</p>
+            <div class="list-group">
+                <ul class="nav nav-pills" id="nav-categories">
+                    <li class="active"><a data-toggle="pill" href="#thing1" class="list-group-item">Bar Staff</a></li>
+                    <li><a data-toggle="pill" href="#thing2" class="list-group-item">Report Databse</a></li>
+                    <li><a data-toggle="pill" href="#thing3" class="list-group-item">CST Application List</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="col-md-9 tab-pane active" id="thing1">
+
+                <div class="thumbnail">
+                    <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                    <div class="caption-full">
+                        <h4 class="pull-right">Last Updated: <span class="lastModified">Dec. 5, 2016</span></h4>
+                        <h4><a href="#">Box 1</a>
+                        </h4>
+                        <p>Description Paragraph here<a target="_blank" href="http://bootsnipp.com"> Link</a>.</p>
+                        <p>Description
+                            <strong>Some Description
+                            </strong></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <!--second-->
+                <div class="col-md-9 tab-pane fade" id="thing2">
+                    <div ng-include="'templates/second.html'"></div>
+
+
+
+
+                </div>
+
+                <!--third-->
+                <div class="col-md-9 tab-pane fade" id="thing3">
+                  <!-- <div ng-include="'templates/third.html'"></div> -->
+                  <div class="thumbnail">
+
+
+
+
+                    <div id="container" style=""></div>
+
+
+
+
+
+                    <div class="caption-full">
+                        <h4 class="pull-right">Last Updated: <span class="lastModified">Dec. 5, 2016</span></h4>
+                        <h4 class="header-title">CST Application by Project Grouping
+                        </h4>
+                        <p class="desc-header">Description</p>
+                        <p class="desc">Below is a list of status categories and the applications that fall under each category.</p>
+                    </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              All Applications <span class="num-app">(144 applications)</span>
+                          </a>
+                      </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+                      <div class="panel-body"  ng-controller="allCtrl">
+
+          <table class="table table-striped">
+
+        <tbody class="searchable">
+            <tr ng-repeat="x in all">
+                <td class="all-td">{{x}}</td>
+
+            </tr>
+            
+
+        </tbody>
+    </table>
+
+<!--                         <ul class="filter">
+                          <li ng-click="activateLetter('')" ng-class="{'letter-active':activeLetter==''}">ALL</li>
+                          <li ng-repeat="letter in alphabet track by $index " ng-click="activateLetter(letter)" ng-class="{'letter-active':letter==activeLetter}">{{letter}}</li>
+
+
+                      </ul>
+                      <div ng-repeat="user in users | startsWithLetter : activeLetter">
+                          {{user.name}}
+                      </div> -->
+                  </div>
+
+
+
+              </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Done
+              </a>
+          </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+          <table class="table table-striped">
+
+        <tbody class="searchable" ng-controller="inprogressCtrl">
+            <tr ng-repeat="x in inprogress">
+                <td>{{x}}</td>
+
+            </tr>
+            
+
+        </tbody>
+    </table>
+
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          In Progress
+      </a>
+  </h4>
+</div>
+<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+  <div class="panel-body">
+
+    <table class="table table-striped">
+
+        <tbody class="searchable">
+            <tr>
+                <td>CA XML Inbound</td>
+
+            </tr>
+            <tr>
+                <td>CXI CA XML Inbound</td>
+
+            </tr>
+            <tr>
+                <td>CLASS Web Service</td>
+
+            </tr>
+
+            <tr>
+                <td>CXI TECS Website</td>
+            </tr>
+            <tr>
+                <td>CXI TECS Resync</td>
+            </tr>
+            <tr>
+                <td>CXI TECS</td>
+            </tr>
+            <tr>
+                <td>CXI Refusal Layer</td>
+            </tr>
+            <tr>
+                <td>CXI Interpol Outbound</td>
+            </tr>
+            <tr>
+                <td>CXI Installer Package</td>
+            </tr>
+            <tr>
+                <td>CXI HHS Resync</td>
+            </tr>
+            <tr>
+                <td>CXI HHS Inbound</td>
+            </tr>
+            <tr>
+                <td>CXI EARM Inbound</td>
+            </tr>
+            <tr>
+                <td>CXI DOD</td>
+            </tr>
+            <tr>
+                <td>CXI DEA Inbound</td>
+            </tr>
+            <tr>
+                <td>CXI DACS Inbound</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+<!--Second thing-->
+
+</div>
+
+</div>
+<!-- /.container -->
+
+
+
+
+<!-- Footer -->
+<div id="footer_wrap">
+  <footer class="inner">
+    <h3>Bureau of Consular Affairs</h3>
+    <p id="address">2201 C St NW, <br>Washington D.C. 20520</p>
+    <p><i class="fa fa-phone" aria-hidden="true"></i>1-888-407-4747</p>
+    <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:CAPressRequests@state.gov">CAPressRequests@state.gov</a></p>
+</footer>
+</div> 
+
+
+
+
+</body>
+
+</html>
