@@ -28,6 +28,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/shop-item.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Nunito|Arimo|Cabin|PT+Serif|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,8 +42,46 @@
     </head>
 
     <body ng-app="myApp">
+<!--RIght-Menu-->
+<div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+</div>
+<div class="right-button-clicky">
+      <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-tasks fa-2x" id="task-icon" aria-hidden="true"></i></a>
+</div>
+<!--/End Right-Menu-->
         <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="top-nav"role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -51,16 +91,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">CST App</a>
+                    <div class="logo-container">
+                    <img src="img/state.png" alt="" class="logo-img">
+                    </div>
+                    <a class="navbar-brand" href="#">Software Analytics</a>
+                   
+
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#myModal">About</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal"></a>
                         </li>
                         <li>
-                            <a href="#">Links</a>
+                            <a href="#"></a>
                         </li>
 
                     </ul>
@@ -89,16 +134,17 @@
     </div>
 </div>
 <!-- Page Content -->
+<div class="section" id="first-section">
 <div class="container">
 
-    <div class="row">
+    <div class="row" id="middle-container">
 
         <div class="col-md-3">
             <p class="lead">Applications</p>
             <div class="list-group">
                 <ul class="nav nav-pills" id="nav-categories">
-                    <li class="active"><a data-toggle="pill" href="#thing1" class="list-group-item">Bar Staff</a></li>
-                    <li><a data-toggle="pill" href="#thing2" class="list-group-item">Report Databse</a></li>
+                    <li class="active"><a data-toggle="pill" href="#thing1" class="list-group-item">Application Analytics Dashboard</a></li>
+                    <li><a data-toggle="pill" href="#thing2" class="list-group-item">Engineering Dashboard</a></li>
                     <li><a data-toggle="pill" href="#thing3" class="list-group-item">CST Application List</a></li>
                 </ul>
             </div>
@@ -305,8 +351,62 @@
 </div>
 
 </div>
+</div>
 <!-- /.container -->
-
+<div class="section" id="second-section">
+    <div class="left-link-wrapper">
+        <div class="left-link">
+        <h2>Links<br><span class="reports">Reports</span><br>Quickstart<br>Guides<span class="color-red">.</span></h2>
+        <p>A Collection of Useful Links.  <br>Links under
+            CAST Reports can be expanded further and there is
+            an archived section in the right-hand menu.
+            If there are issues with links and/or missing links,
+         please send contact to <a href="">consular@gov.gov</a>. </p>
+        </div>
+    </div>
+    <div class="right-link-wrapper">
+        <div class="right-link">
+            <div class="link-boxes">
+                <hr>
+                <h2>Quickstart Guides</h2>
+                
+                <p class="link-cont">
+                <a href="">AAD v.2.1</a>
+                <br>
+                <a href="">CED</a>
+                <br>
+               
+            </p>
+            </div>
+            <div class="link-boxes">
+                                <hr>
+                <h2>CAST Reports</h2>
+                
+                <p class="link-cont">
+                <a href="">CAST Reports</a>
+                <br>
+                <a href="">Measuring Technical Debt</a>
+                <br>
+                <a href="">Assessment Approach Overview</a>
+                <br>
+                <a href="">Seibol Metrics and Quality Rules</a>
+            </p>
+            </div>
+            <div class="link-boxes">
+                                <hr>
+                <h2>Standards</h2>
+                
+                <p class="link-cont">
+                <a href="">CA-CST-SII Software Standards</a>
+                <br>
+                <a href="">Understanding Quality Indicators</a>
+                <br>
+                <a href="">Importance of Measuring Layers in Applications</a>
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -324,5 +424,11 @@
 
 
 </body>
-
+     <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".right-button-clicky").toggleClass("menu-toggle");
+    });
+    </script>
 </html>
